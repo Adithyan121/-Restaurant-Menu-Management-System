@@ -1,0 +1,154 @@
+
+.brunch-menu {
+    background: #0a0a0a; 
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Title */
+.brunch-menu h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #ff3c00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Background Images */
+.bg-image {
+    position: absolute;
+    width: 250px;
+    opacity: 0.2;
+}
+
+.left-bg {
+    left: 0;
+    top: 20%;
+}
+
+.right-bg {
+    right: 0;
+    top: 30%;
+}
+
+/* Menu Container with Border */
+.menu-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+}
+.menu-container h1 {
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 4px 3px 0px rgba(128, 0, 32, 1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container h1::before,
+.menu-container h1::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: white;
+    margin: 0 15px;
+}
+
+
+/* Menu Layout */
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Menu Columns */
+.menu-column {
+    width: 45%;
+}
+
+/* Menu Items */
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+font-family: Oswald;
+font-weight: 400;
+font-size: 26px;
+line-height: 100%;
+letter-spacing: 3%;
+text-transform: uppercase;
+color: rgba(255, 255, 255, 1);
+;
+
+}
+
+.menu-item span {
+    font-size: 20px;
+}
+
+.menu-item p {
+font-family: Kelly Slab;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+/* brunch Images */
+.brunch-image {
+    position: absolute;
+    width: 100px;
+}
+
+.brunch-image.left {
+    top: -50px;
+    left: -50px;
+}
+
+.brunch-image.right {
+    bottom: -30px;
+    right: -30px;
+}
+@media (max-width: 768px){
+    .menu-container {
+        padding: 20px;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-column {
+        width: 90%;
+    }
+
+    .brunch-image {
+        width: 80px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .first, .second {
+        display: none;
+    }
+}

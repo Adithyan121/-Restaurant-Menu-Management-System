@@ -2,16 +2,12 @@ import React, { useEffect, useState } from "react";
 import "../css/brunch.css";
 import brunch1 from "../assets/brunch1.webp"; 
 import brunch2 from "../assets/brunch2.webp"; 
+import api from "../api"
 
 const BrunchMenu = () => {
     const [brunchItems, setBrunchItems] = useState([]);
 
-    useEffect(() => {
-        fetch("http://localhost:5000/api/brunchmenu") 
-            .then((response) => response.json())
-            .then((data) => setBrunchItems(data))
-            .catch((error) => console.error("Error fetching brunch menu:", error));
-    }, []);
+     
     useEffect(() => {
         const fetchBrunchMenu = async () => {
             try {
